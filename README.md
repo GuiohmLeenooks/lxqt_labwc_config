@@ -5,7 +5,7 @@ Custom labwc config for lxqt desktop with some COSMIC DE shortcuts
 
 FEATURES
 
-- COSMIC DE shorcuts: Super+B for browser (Falkon) , Super+F for Lxqt file manager, Super+T for Lxqt Terminal and Print for Screengrab
+- COSMIC DE shortcuts: Super+B for browser (Falkon) , Super+F for Lxqt file manager, Super+T for Lxqt Terminal and Print for Screengrab
 - Configuring other keys is on the rc.xml file as per the labwc documentation. Refer the labwc for details
 - Switching desktop keys are commented until I find how to fix them.
 - Keyboard Layout is located in environment file as per the labwc documentation.
