@@ -1,0 +1,101 @@
+<!--
+  This is a very simple config file with many options missing. For a complete
+  set of options with comments, see docs/rc.xml.all
+-->
+
+<labwc_config>
+
+  <theme>
+    <name>Nightmare</name>
+    <cornerRadius>8</cornerRadius>
+    <font name="sans" size="10" />
+  </theme>
+
+  <keyboard>
+    <default />
+
+    <!-- Use a different terminal emulator -->
+    <keybind key="W-t">
+      <action name="Execute" command="qterminal" />
+    </keybind>
+
+    <!-- Workspaces switch and Send to commands -->
+
+<!-- <keybind key="W-1">
+	  <action name="GoToDesktop" to="1" />
+	</keybind>
+	<keybind key="W-2">
+	  <action name="GoToDesktop" to="2" />
+	</keybind>
+	<keybind key="W-3">
+	  <action name="GoToDesktop" to="3" />
+	</keybind>
+	<keybind key="W-4">
+	  <action name="GoToDesktop" to="4" />
+	</keybind>
+
+
+	<keybind key="W-S-1">
+	  <action name="SendToDesktop" to="1" follow="yes" />
+	</keybind>
+	<keybind key="W-S-2">
+	  <action name="SendToDesktop" to="2" follow="yes" />
+	</keybind>
+	<keybind key="W-S-3">
+	  <action name="SendToDesktop" to="3" follow="yes" />
+	</keybind>
+	<keybind key="W-S-4">
+	  <action name="SendToDesktop" to="4" follow="yes" />
+	</keybind> -->	
+
+	<!-- Use a different browser as needed -->
+	<keybind key="W-b">
+	  <action name="Execute" command="falkon" />
+	</keybind>
+	<!-- use a different file manager as needed -->
+	<keybind key="W-f">
+	  <action name="Execute" command="pcmanfm-qt" />
+	</keybind>
+	<!-- use another screen capture as needed -->
+	<keybind key="Print">
+	  <action name="Execute" command="screengrab" />
+	</keybind>
+	<!-- alternate key for screen capture -->
+	<keybind key="W-p">
+	  <action name="Execute" command="screengrab" />
+	</keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <!-- Show a custom menu on desktop right click -->
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="some-custom-menu" />
+      </mousebind>
+    </context>
+  </mouse>
+
+<!--Workspaces can be configured like this:
+    
+<desktops>
+      <popupTime>300</popupTime>
+      <initial>Workspace 1</initial>
+      <names>
+        <name>Workspace 1</1>
+        <name>Workspace 2</2>
+        <name>Workspace 3</3>
+        <name>Workspace 4</4>
+      </names>
+    </desktops> -->
+   
+    <!-- popupTime defaults to 1000 so could be left out.
+    Set to 0 to completely disable the workspace OSD.
+
+    prefix defaults to "Workspace" when using number instead of names.
+
+    Use GoToDesktop left | right to switch workspaces.
+    Use SendToDesktop left | right to move windows.
+    See man labwc-actions for further information. -->
+
+</labwc_config>
